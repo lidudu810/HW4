@@ -111,6 +111,51 @@ int unitTest5(int status)
     return passed;
 }
 
+// Tests push_front twice, then test get.
+int unitTest6(int status)
+{
+    int passed = 0;
+    dll_t *test = create_dll();
+    dll_push_front(test, 142);
+    dll_push_front(test, 140);
+    int test1 = dll_get(test, 0);
+    if (test1 == 142)
+    {
+        passed = 1;
+    }
+    else
+    {
+        passed = 0;
+    }
+    free_dll(test);
+
+    return passed; 
+}
+
+//Test insert twice, and remove.
+// then should compute the correct size.
+int unitTest7(int status)
+{
+    int passed = 0;
+    dll_t *test = create_dll();
+    dll_push_front(test, 100);
+    dll_insert(test, 0, 867);
+    dll_insert(test, 1, 255);
+    dll_remove(test, 0);
+    if (2 == dll_size(test))
+    {
+        passed = 1;
+    }
+    else
+    {
+        passed = 0;
+    }
+    free_dll(test);
+
+    return passed;  
+}
+
+
 // An array of function pointers to all of the tests
 // that main() can use iterate over them.
 // UNCOMMENT Tests as you are ready to use them
@@ -121,6 +166,8 @@ int (*unitTests[])(int) = {
    unitTest3,
    unitTest4,
    unitTest5,
+   unitTest6,
+   unitTest7,
     NULL};
 
 // ====================================================
