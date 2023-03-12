@@ -21,11 +21,13 @@ none
 ## Understanding Time Complexity
 
 1. Using a markdown table and markdown/latex math, show the BigO for Arrays, Singly Linked Lists, Doubly Linked Lists (so total of 3). For the columns, you will look at the Worst Case Time Complexity for Access, Search/Find,	Insertion, and Deletion. 
-Operation	    Arrays	  Singly Linked Lists	    Doubly Linked Lists
-Access	      $O(1)$	        $O(n)$	                $O(n)$
-Search/Find	  $O(n)$	        $O(n)$	                $O(n)$
-Insertion	    $O(n)$	        $O(1)$	                $O(1)$
-Deletion	    $O(n)$	        $O(1)$	                $O(1)$
+| Operation	| Arrays | Singly Linked Lists | Doubly Linked Lists |
+| --------- | ------ | ------------------- | ------------------- |
+| Access	  | $O(1)$ |	    $O(n)$	       |       $O(n)$        |
+| Search    |	$O(n)$ |      $O(n)$	       |       $O(n)$        |
+| Insertion	| $O(n)$ |      $O(1)$	       |       $O(1)$        |
+| Deletion	| $O(n)$ |	    $O(1)$	       |       $O(1)$        |
+
 
 2. Usually for singly and doubly linked lists, we reference both the head and tail for speed considerations. What would be the cost if you only had your head referenced, and you wanted to push to the tail of either?  $O(?)$
 
