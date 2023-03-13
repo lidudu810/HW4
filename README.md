@@ -37,7 +37,7 @@ Assuming that we only have access to the head reference and wish to move towards
 
 An example where an array is better than a linked list is when we need to access elements randomly. Arrays have constant time complexity $O(1)$ for accessing elements, while linked lists have $O(n)$ time complexity for the same operation. For example, when implementing a matrix, where we need to access individual elements using row and column indices, arrays are a better choice than linked lists.
 
-An example where a linked list is better than an array is when we need to insert or delete elements frequently. Linked lists have constant time complexity $O(1)$ for inserting and deleting elements, while arrays have $O(n)$ time complexity for the same operations. For example, when implementing a queue, where we need to frequently add and remove elements from the front and rear ends of the queue, linked lists are a better choice than arrays. 
+An example where a linked list is better than an array is When we need to be insert or delete elements frequently at the head or tail of the linked list. Linked lists have constant time complexity $O(1)$ for inserting and deleting elements, while arrays have $O(n)$ time complexity for the same operations. For example, when implementing a queue, where we need to frequently add and remove elements from the front and rear ends of the queue, linked lists are a better choice than arrays. 
 
 
 Note: Make sure look at your finished markdown in the browser hosted on github or via a markdown preview extension. To confirm the notation is showing up properly. 
